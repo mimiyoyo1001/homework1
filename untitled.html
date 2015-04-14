@@ -10,6 +10,11 @@
 			<ul>
 				<li>首頁</li>
 			</ul>
+			<ol>
+				<li>首頁</li>
+				<li>首頁</li>
+				<li>首頁</li>
+			</ol>
 		</nav>
 	</header>
 	<hgroup>
@@ -26,21 +31,25 @@
 			<figure>
 				<img src="ＡＢＣ.JPG" width="50%" height="50%" />
 				<figcaption>圖一：ＨＴＭＬ表格示範</figcaption>
-				
+
 			</figure>
-			<form action="http://www.meigic.tw/test.php" method="get">
+			<form method = "post" action="http://www.meigic.tw/test.php" method="get"encetype="multipart/from-data">
 				<p>
-					<label>Nickname:</label>
-					<input name="Nickname"type="text"/>
+					<label for = "Nickname" >Nickname:</label>
+					<input id = "Nickname" name="Nickname"type="text" placeholder="請輸入暱稱"/>
 				</p>
 				<p>
-					<label>Email:</label>
-					<input name="Email"type="Email"/>
+					<label for="Email">Email:</label>
+					<input id="Email"name="Email"type="Email" placeholder="請輸入電子信箱"/>
 				</p>
 				<p>
-					<label>Password:</label>
-					<input name="Password"type="Password"/>
+					<label for="Password">Password:</label>
+					<input id="Password" name="Password"type="Password" placeholder="請輸入密碼"/>
 				</p>
+				<div>
+					<label>pic:</label>
+					<input name="pic_file"type="file"/>
+				</div>
 				<p>
 					<button type="submit">Sign up</button>
 				</p>
