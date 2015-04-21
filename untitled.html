@@ -3,9 +3,44 @@
 <head>
 	<meta charset="utf-8"/></meta>
 	<title>First page</title>
+	<style type="text/css">
+		body{
+			width: 1000px;
+			margin: 0px auto  0px auto ;
+			background: #55FF99;
+		}
+		header{
+			color: #FFF;
+			transition:all 1s;
+			background: #5599FF;
+			opacity: 1;
+			box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+			border-radius: 15px;
+			text-shadow: 0px 0px 3px rgba(0,0,0,1);
+
+		}
+		header a {
+			color: #FFF;
+		}
+
+		header:hover{
+			opacity: 1;
+			background: #FF5599;
+			transform: rotate(-5deg);
+		}
+		
+	}
+	.a{
+		float:  left;
+		margin-left: 10px;
+	}
+	section{
+		display: block;
+	}
+</style>
 </head>
 <body>
-	<header>
+	<header id="a">
 		<nav>
 			<ul>
 				<li>首頁</li>
@@ -14,90 +49,110 @@
 				<li>首頁</li>
 				<li>首頁</li>
 				<li>首頁</li>
+				<li><a href="http://www.google.com"> 首頁</li>
 			</ol>
 		</nav>
 	</header>
 	<hgroup>
 		<h1>123</h1>
 		<h1>456</h2>
-			<h2><a href="http://www.google.com">GOOGLE</a></h2>
-			<h2><a href="http://www.yahoo.com.tw">YAHOO</a></h2>
+			<h2 class="a"><a href="http://www.google.com">GOOGLE</a></h2>
+			<h2 class="a"><a href="http://www.yahoo.com.tw">YAHOO</a></h2>
 		</hgroup>
 		<article>
-			<address>by 123</address>
-			<section>
-				<p>強烈熱帶氣旋迪娜是2002年1月中到下旬出現在西南印度洋的一個熱帶氣旋，</p>在留尼旺部分地區引發了創紀錄的洪澇災害。系統源於2002年1月15日查戈斯群島附近海域的一股熱帶擾動，由於所在區域有利於熱帶氣旋形成，該擾動迅速發展，到1月17日時，系統已在向西南方向移動的過程中發展出足夠對流，成為熱帶低氣壓。
-			</section>
-			<figure>
-				<img src="ＡＢＣ.JPG" width="50%" height="50%" />
-				<figcaption>圖一：ＨＴＭＬ表格示範</figcaption>
+			<BR><BR><BR><BR>
+				<address>by 123</address>
+				<section>
+					<p>強烈熱帶氣旋迪娜是2002年1月中到下旬出現在西南印度洋的一個熱帶氣旋，</p>在留尼旺部分地區引發了創紀錄的洪澇災害。系統源於2002年1月15日查戈斯群島附近海域的一股熱帶擾動，由於所在區域有利於熱帶氣旋形成，該擾動迅速發展，到1月17日時，系統已在向西南方向移動的過程中發展出足夠對流，成為熱帶低氣壓。
+				</section>
+				<figure>
+					<img src="ＡＢＣ.JPG" width="50%" height="50%" />
+					<figcaption>圖一：ＨＴＭＬ表格示範</figcaption>
 
-			</figure>
-			<form method = "post" action="http://www.meigic.tw/test.php" method="get"encetype="multipart/from-data">
-				<p>
-					<label for = "Nickname" >Nickname:</label>
-					<input id = "Nickname" name="Nickname"type="text" placeholder="請輸入暱稱"/>
-				</p>
-				<p>
-					<label for="Email">Email:</label>
-					<input id="Email"name="Email"type="Email" placeholder="請輸入電子信箱"/>
-				</p>
-				<p>
-					<label for="Password">Password:</label>
-					<input id="Password" name="Password"type="Password" placeholder="請輸入密碼"/>
-				</p>
-				<div>
-					<label>pic:</label>
-					<input name="pic_file"type="file"/>
-				</div>
-				<p>
-					<button type="submit">Sign up</button>
-				</p>
-			</form>
-			<table border="1">
-				<thead>
-					<tr>
-						<th>Number</td>
-							<th>First Name</td>
-								<th>Last Name</td>
-									<th>Point</td>
+				</figure>
+				<form method = "post" action="http://www.meigic.tw/test.php" method="get"encetype="multipart/from-data">
+					<p>
+						<label for = "Nickname" >Nickname:</label>
+						<input id = "Nickname" name="Nickname"type="text" placeholder="請輸入暱稱"/>
+					</p>
+					<p>
+						<label for="Email">Email:</label>
+						<input id="Email"name="Email"type="Email" placeholder="請輸入電子信箱"/>
+					</p>
+					<p>
+						<label for="Password">Password:</label>
+						<input id="Password" name="Password"type="Password" placeholder="請輸入密碼"/>
+					</p>
+					<div>
+						<label>pic:</label>
+						<input name="pic_file"type="file"/>
+					</div>
+					<p>
+						<button type="submit">Sign up</button>
+					</p>
+				</form>
+				<table border="1">
+					<thead>
+						<tr>
+							<th>Number</td>
+								<th>First Name</td>
+									<th>Last Name</td>
+										<th>Point</td>
+										</tr>
+									</thead>
+									<tr>
+										<td>123</td>
+										<td>456</td>
+										<td>yoyo</td>
+										<td>甲乙丙</td>
 									</tr>
-								</thead>
-								<tr>
-									<td>123</td>
-									<td>456</td>
-									<td>yoyo</td>
-									<td>甲乙丙</td>
-								</tr>
-								<tr>
-									<td>９８７</td>
-									<td>：：：</td>
-									<td>＋＋＋</td>
-									<td>－－－</td>
-								</tr>
-								<tr>
-									<td>***</td>
-									<td>///</td>
-									<td>...</td>
-									<td>===</td>
-								</tr>
-								<tr>
-									<td>!@#</td>
-									<td>$%^</td>
-									<td>z88*</td>
-									<td>z00</td>
-								</tr>
-							</table>
-							<section>
-								此後不久，系統進入爆發性增強期，其風速於1月18日達到每小時120公里。1月20日，迪娜達到風力時速215公里的最高強度，成為強烈熱帶氣旋。幾小時後，風暴從羅德里格斯島以北約150公里洋面經過。1月21日，風暴以強烈熱帶氣旋強度衝擊模里西斯和留尼旺，然後轉向南下並逐漸減弱，最終於1月25日轉變成溫帶氣旋。系統殘留加速向東南方向前進，氣象部門一直追蹤至1月28日，之後這些殘留由極地低壓槽吸收。模里西斯和留尼旺狂風肆虐、普降暴雨，遭受到大範
-							</section>
-						</article>
-						<h1>h1</h1>
-						<h2>h2</h2>
-						<h3>h3</h3>
-						<h4>h4</h4>
-						<h5>h5</h5>
-						<h6>h6</h6>
-						<div></div>
+									<tr>
+										<td>９８７</td>
+										<td>：：：</td>
+										<td>＋＋＋</td>
+										<td>－－－</td>
+									</tr>
+									<tr>
+										<td>***</td>
+										<td>///</td>
+										<td>...</td>
+										<td>===</td>
+									</tr>
+									<tr>
+										<td>!@#</td>
+										<td>$%^</td>
+										<td>z88*</td>
+										<td>z00</td>
+									</tr>
+								</table>
+								<section>
+									此後不久，系統進入爆發性增強期，其風速於1月18日達到每小時120公里。1月20日，迪娜達到風力時速215公里的最高強度，成為強烈熱帶氣旋。幾小時後，風暴從羅德里格斯島以北約150公里洋面經過。1月21日，風暴以強烈熱帶氣旋強度衝擊模里西斯和留尼旺，然後轉向南下並逐漸減弱，最終於1月25日轉變成溫帶氣旋。系統殘留加速向東南方向前進，氣象部門一直追蹤至1月28日，之後這些殘留由極地低壓槽吸收。模里西斯和留尼旺狂風肆虐、普降暴雨，遭受到大範
+								</section>
+							</article>
+							<h1>h1</h1>
+							<h2>h2</h2>
+							<h3>h3</h3>
+							<h4>h4</h4>
+							<h5>h5</h5>
+							<h6>h6</h6>
+							<div></div>
+						<!--script type="text/javascript">
+							document.getElementById('a').onmouseover = function(){
+								var a = false;
+								var ev = setInterval(function(){
+									if (a)  {
+										document.getElementById('a').style.transform = "rotate(5deg)";
+										document.getElementById('a').style.height="100px";
+									}else{
+										document.getElementById('a').style.transform= "rotate(-10deg)";
+										document.getElementById('a').style.height="100px";
+									}
+									a = !a;
+								},1000);
+							}
+							document.getElementById('a').onmouseout = function(){
+								clearInterval(ev);
+							} 
+						</script-->
 					</body>
 					</html>
